@@ -1,0 +1,31 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "heartheworldfunction"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to hear the world",
+            "let me talk to hear the world",
+            "i want to talk to hear the world",
+            "can i talk to hear the world",
+            "ask hear the world",
+            "get me hear the world"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "heartheworldfunction": {
+      "name": "heartheworldfunction",
+      "url": "https://us-central1-hear-the-world-e9868.cloudfunctions.net/heartheworldfunction"
+    }
+  },
+  "locale": "en"
+}
